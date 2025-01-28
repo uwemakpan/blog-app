@@ -1,0 +1,42 @@
+Steps in creating an http server:
+
+1. Create the package.json file thus:
+npm init
+
+2. Create your src folder
+3. Create your app.js and server.js in there
+4. Install your production dependencies
+npm i express dotenv
+
+5. Install the Dev dependencies
+npm i -D nodemon
+
+6. create your .env and .gitignore files
+
+7. IN THE gitignore put in the env and node_moduels folder
+
+8. Note:
+
+9. Next create your server thus
+const http = require('http')
+const httpServer = http.createServer()
+const {PORT} = require('./lib/index)
+
+10. install the nodemon dev dependency if u have not done so
+npm i -D nodemon
+
+11. set up your start script in your package.json file
+"start" : "node src/server"
+
+12. set up the development script thus:
+"dev" : "nodemon src/server"
+
+13. Handle routing using express
+
+14. next create your models folder 
+and add the blog.model.js file to create your Schema
+
+15 install your mongoose ODM
+npm i mongoose
+
+16 Then you create your model
