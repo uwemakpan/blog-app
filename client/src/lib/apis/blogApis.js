@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'http://localhost:3001'
+const baseUrl = 'https://blog-app-ev8z.onrender.com'
 
 // Get all blogs
 export const getAllBlogs = async (page) => {
