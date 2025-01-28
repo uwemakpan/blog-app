@@ -28,7 +28,15 @@ app.use(express.json())
 // configuration to allow cookie-parser as a global configuration
 app.use(cookieParser())
 // configuraion to allow client to send request to backend api => cors policy
-app.use(cors({ origin: ['http://localhost:5173'], credentials: true }))
+app.use(
+  cors({
+    origin: [
+      'http://localhost:5173',
+      'https://blog-app-wheat-nine-71.vercel.app',
+    ],
+    credentials: true,
+  })
+)
 
 app.use('/blogs', blogRoutes)
 app.use('/users', userRoutes)
